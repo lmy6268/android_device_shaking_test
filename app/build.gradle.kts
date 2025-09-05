@@ -62,6 +62,7 @@ dependencies {
     //hilt 사용
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    implementation(libs.hilt.compose.navigation)
 }
 
 fun getIntFromLibs(getter: () -> Provider<String>): Int = getter().get().toInt()
